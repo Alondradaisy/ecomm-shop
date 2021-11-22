@@ -5,7 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import AddIcon from "@mui/icons-material/Add";
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
 
 function Home() {
@@ -50,15 +52,11 @@ function Home() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button
-                size="medium"
-                onClick={() => {
-                  addToBag(product);
-                }}
-                variant="contained"
-              >
-                ADD TO BAG
-              </Button>
+              <Box sx={{ "& > :not(style)": { m: 1 } }}>
+                <Fab size="small" color="secondary" aria-label="add">
+                  <AddIcon />
+                </Fab>
+              </Box>
             </CardActions>
           </Card>
         );

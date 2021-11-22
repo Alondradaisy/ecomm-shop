@@ -3,8 +3,8 @@ import { Box, AppBar, Toolbar, IconButton } from "@material-ui/core";
 import LocalMallSharpIcon from "@mui/icons-material/LocalMallSharp";
 import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
-import AppleIcon from "@mui/icons-material/Apple";
-import MenuIcon from "@mui/icons-material/Menu";
+import HomeIcon from "@mui/icons-material/Home";
+import WorkspacesIcon from "@mui/icons-material/Workspaces";
 
 function NavBar() {
   return (
@@ -12,7 +12,7 @@ function NavBar() {
       <AppBar
         position="static"
         style={{
-          background: "#3A3A3A",
+          background: "#eaafc8",
         }}
       >
         <Toolbar
@@ -21,11 +21,11 @@ function NavBar() {
           }}
         >
           <Link to="/" style={{ width: "33%" }}>
-            <MenuIcon sx={{ color: "white" }} />
+            <HomeIcon sx={{ color: "white" }} />
           </Link>
           <Typography style={{ textAlign: "center", width: "33%" }}>
             <Link to="/" style={{ width: "33%" }}>
-              <AppleIcon
+              <WorkspacesIcon
                 sx={{
                   color: "white",
                   justifyContent: "center",
