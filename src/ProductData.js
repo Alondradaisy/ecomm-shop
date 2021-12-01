@@ -8,7 +8,7 @@ const productList = [
       "Layers of festive fringe adorn this midi skirt, adding movement to every step you take.  ",
     brand: "Rachel Comey",
     price: 59500,
-    img: "",
+    img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/rachel-comey-+gyre-skirt.JPG",
   },
   {
     id: uuidv4(),
@@ -17,7 +17,7 @@ const productList = [
       "A hip-hugging midi-skirt with a crinkled satin finish by London-based designer Rejina Pyo.",
     brand: "Rejina Pyo",
     price: 57500,
-    img: "",
+    img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/rejina-pyo-lime-lilly-skirt-suit.jpeg",
   },
   {
     id: uuidv4(),
@@ -26,7 +26,7 @@ const productList = [
       "These Track Classic ripstop sneakers with leather trim bring together retro cool with an athletic vibe for everyday wear.",
     brand: "Common Projects",
     price: 47900,
-    img: "",
+    img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/track-classic-common-projs.JPG",
   },
   {
     id: uuidv4(),
@@ -34,7 +34,7 @@ const productList = [
     description: "Block Heel Clear Slide",
     brand: "Maryam Nassir Zadeh",
     price: 44800,
-    img: "",
+    img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/mnz-agatha-slide.jpeg",
   },
 ];
 
