@@ -7,7 +7,9 @@ import { fetchProducts } from "./ProductData"; //brings in our mock data
 
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
+import LandingPage from "./pages/LandingPage";
 //import ToggleTheme from "./components/ToggleTheme";
 
 import "./App.css";

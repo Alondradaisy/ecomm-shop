@@ -31,7 +31,7 @@ const productList = [
   {
     id: uuidv4(),
     title: "Maryam Nassir Zadeh Agatha Slide",
-    description: "Block Heel Clear Slide",
+    description: "Made in Italy opal plastic block heel slide ",
     brand: "Maryam Nassir Zadeh",
     price: 44800,
     img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/mnz-agatha-slide.jpeg",
