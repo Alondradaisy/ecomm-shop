@@ -54,7 +54,7 @@ function Home() {
             <CardActions>
               <Box sx={{ "& > :not(style)": { m: 1 } }}>
                 <Fab size="small" color="secondary" aria-label="add">
-                  <AddIcon />
+                  <AddIcon display="flex" alignItems="center" />
                 </Fab>
               </Box>
             </CardActions>

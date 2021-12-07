@@ -71,6 +71,15 @@ function ShoppingBag() {
               marginRight: "5px",
             }}
           >
+            Continue Shopping
+          </Button>
+          <Button
+            size="medium"
+            variant="contained"
+            style={{
+              marginRight: "5px",
+            }}
+          >
             Checkout
           </Button>
           <Button
@@ -80,7 +89,7 @@ function ShoppingBag() {
               emptyBag();
             }}
           >
-            Clear Bag
+            Empty Bag
           </Button>
         </div>
       </div>

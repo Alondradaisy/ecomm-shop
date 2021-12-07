@@ -7,11 +7,8 @@ import { fetchProducts } from "./ProductData"; //brings in our mock data
 
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import DarkMode from "./components/DarkMode";
+//import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
-import LandingPage from "./pages/LandingPage";
-//import ToggleTheme from "./components/ToggleTheme";
-
 import "./App.css";
 
 // we use this object so that we avoid any syntax errors in our dispatch
@@ -38,7 +35,6 @@ function reducer(productsInBag, action) {
   }
 }
 
-// create a function that will return the item's image, name, and price in an object
 function addNewItem(product) {
   return {
     id: uuidv4(), //we give the product an individual title
@@ -50,11 +46,11 @@ function addNewItem(product) {
 
 function App() {
   const bagInLocalStorage = window.localStorage.getItem("shoppingBag");
-  // check if we already have products in the shopping bag if not set it to empty array
+
   const initialShoppingBag = bagInLocalStorage
     ? JSON.parse(bagInLocalStorage)
     : [];
-  const [productsInBag, dispatch] = useReducer(reducer, initialShoppingBag); //this will populate as we add items to our bag
+  const [productsInBag, dispatch] = useReducer(reducer, initialShoppingBag); //to populate items in bag
   const [productList, setProductList] = useState([]);
 
   useEffect(() => {
@@ -65,7 +61,7 @@ function App() {
     window.localStorage.setItem("shoppingBag", JSON.stringify(productsInBag));
   }, [productsInBag]);
 
-  // we will pass down this function to the home page so when we add to bag, we update the productsInBag data
+  // to update the productsInBag
   const addToBag = (product) => {
     dispatch({ type: ACTIONS.ADD_TO_BAG, payload: product });
   };
