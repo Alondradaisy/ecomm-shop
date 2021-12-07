@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-
 import { ShoppingBagContext } from "./context/ShoppingBagContext"; //brings in the Shopping Bag Context we created
 import { fetchProducts } from "./ProductData"; //brings in our mock data
 
@@ -9,6 +8,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 //import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
+import BagPage from "./pages/BagPage";
 import "./App.css";
 
 // we use this object so that we avoid any syntax errors in our dispatch
