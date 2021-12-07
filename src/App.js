@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 //import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
-import BagPage from "./pages/BagPage";
+//import BagPage from "./pages/BagPage";
 import "./App.css";
 
 // we use this object so that we avoid any syntax errors in our dispatch

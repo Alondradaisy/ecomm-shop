@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
 
 function Home() {

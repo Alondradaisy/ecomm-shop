@@ -3,6 +3,8 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
 import App from "../App";
 
 function ShoppingBag() {
