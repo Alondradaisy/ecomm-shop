@@ -54,7 +54,13 @@ function Home() {
             <CardActions>
               <Box sx={{ "& > :not(style)": { m: 1 } }}>
                 <Fab size="small" color="secondary" aria-label="add">
-                  <AddIcon display="flex" alignItems="center" />
+                  <AddIcon
+                    display="flex"
+                    alignItems="center"
+                    onClick={() => {
+                      addToBag(product);
+                    }}
+                  />
                 </Fab>
               </Box>
             </CardActions>

@@ -3,6 +3,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
+import App from "../App";
 
 function ShoppingBag() {
   const { productsInBag, removeFromBag, emptyBag } =

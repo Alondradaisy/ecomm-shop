@@ -14,7 +14,7 @@ class ItemCount extends React.Component {
     return (
       <Box>
         <div>ItemCount: {shoppingBag.length}</div>
-        <button onClick={() => this.handleEmptyBag()}>Empty cart</button>
+        <button onClick={() => this.handleEmptyBag()}>Empty bag</button>
       </Box>
     );
   }
@@ -28,7 +28,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // dispatching plain actions
     emptyBag: () => dispatch({ type: EMPTY_BAG }),
   };
 };
