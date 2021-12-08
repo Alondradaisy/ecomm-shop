@@ -3,7 +3,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import App from "../App";
 
@@ -67,15 +67,18 @@ function ShoppingBag() {
             : `$0.00`}
         </span>
         <div>
-          <Button
-            size="medium"
-            variant="contained"
-            style={{
-              marginRight: "5px",
-            }}
-          >
-            Continue Shopping
-          </Button>
+          <Link to="/" element={<Home />}>
+            <Button
+              size="medium"
+              variant="contained"
+              style={{
+                marginRight: "5px",
+              }}
+            >
+              Continue Shopping
+            </Button>
+          </Link>
+
           <Button
             size="medium"
             variant="contained"
