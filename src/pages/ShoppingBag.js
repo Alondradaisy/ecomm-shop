@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -20,6 +22,8 @@ function ShoppingBag() {
 
     return totalPrice / 100;
   };
+
+  const notify = () => toast("Order confirmed!");
 
   return (
     <div>
@@ -78,16 +82,18 @@ function ShoppingBag() {
               Continue Shopping
             </Button>
           </Link>
-
           <Button
             size="medium"
             variant="contained"
+            onClick={notify}
             style={{
               marginRight: "5px",
             }}
           >
+            <ToastContainer />
             Checkout
           </Button>
+
           <Button
             size="medium"
             variant="outlined"
