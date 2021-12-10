@@ -8,8 +8,15 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+//import DarkMode from "../components/DarkMode";
+
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
+const handleDelete = () => {
+  console.log("You clicked the delete icon");
+};
 
 function Home() {
   const {
@@ -64,6 +71,15 @@ function Home() {
                   />
                 </Fab>
               </Box>
+              <Stack>
+                <Chip
+                  label="REMOVE FROM BAG"
+                  onDelete={handleDelete}
+                  variant="filled"
+                  display="flex"
+                  justifyContent="center"
+                />
+              </Stack>
             </CardActions>
           </Card>
         );

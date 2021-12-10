@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { ShoppingBagContext } from "./context/ShoppingBagContext"; //brings in the Shopping Bag Context we created
 import { fetchProducts } from "./ProductData"; //brings in our mock data
-
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 //import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
 //import BagPage from "./pages/BagPage";
 import "./App.css";
+import Login from "./pages/Login";
+import RegisterUserPage from "./pages/RegisterUserPage";
 
 // we use this object so that we avoid any syntax errors in our dispatch
 export const ACTIONS = {
@@ -89,6 +90,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bag" element={<ShoppingBag />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register-user" element={<RegisterUserPage />} />
         </Routes>
       </Router>
     </ShoppingBagContext.Provider>
