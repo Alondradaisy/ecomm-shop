@@ -1,4 +1,4 @@
-import { logInUser } from "../ProductData";
+import { logInUser } from "../fetchData";
 
 // ACTIONS
 export const LOG_IN_ACTION = "localhost:3020/LOG_IN";
@@ -25,3 +25,5 @@ export const userReducer = (state = null, action) => {
 
   return state;
 };
+
+export default logInUser;

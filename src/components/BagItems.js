@@ -3,6 +3,7 @@ import { Card, CardMedia, IconButton, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { ShoppingBagContext } from "../context/ShoppingBagContext";
+import { App } from "../App";
 
 const BagItems = (props) => {
   const { removeFromBag } = ShoppingBagContext();

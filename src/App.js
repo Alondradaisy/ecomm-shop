@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useReducer } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
-import { ShoppingBagContext } from "./context/ShoppingBagContext"; //brings in the Shopping Bag Context we created
+import { ShoppingBagContext } from "./context/ShoppingBagContext";
 import { fetchProducts } from "./ProductData"; //brings in our mock data
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-//import DarkMode from "./components/DarkMode";
 import ShoppingBag from "./pages/ShoppingBag";
 //import BagPage from "./pages/BagPage";
 import "./App.css";
 import Login from "./pages/Login";
 import RegisterUserPage from "./pages/RegisterUserPage";
+//import ItemCount from "./components/ItemCount";
 
 // we use this object so that we avoid any syntax errors in our dispatch
 export const ACTIONS = {
@@ -21,8 +21,6 @@ export const ACTIONS = {
 };
 
 function reducer(productsInBag, action) {
-  // the add to bag needs to account for multiple selections
-  // todo, add products that are same into same object
   if (action.type === ACTIONS.ADD_TO_BAG) {
     return [...productsInBag, addNewItem(action.payload)];
   }

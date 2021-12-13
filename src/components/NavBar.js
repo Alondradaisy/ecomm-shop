@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import WorkspacesIcon from "@mui/icons-material/Workspaces";
+import Login from "../pages/Login";
 
 function NavBar() {
   return (
@@ -34,6 +35,7 @@ function NavBar() {
               />
             </Link>
           </Typography>
+
           <Link
             to="/bag"
             style={{

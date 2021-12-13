@@ -2,10 +2,9 @@ import { Button, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "../pages/Home";
-import Layout from "../components/Layout";
-import ReplayIcon from "@mui/icons-material/Replay";
-import { logInUser } from "../fetchProducts";
+//import Home from "../pages/Home";
+import NavBar from "../components/NavBar";
+import { logInUser } from "../fetchData";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -63,10 +62,10 @@ const Login = () => {
   const user = useSelector((state) => state.user);
 
   return (
-    <Layout>
+    <NavBar>
       {error}
       {user ? `Welcome back ${user.name}!` : <Form setError={setError} />}
-    </Layout>
+    </NavBar>
   );
 };
 

@@ -3,12 +3,10 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
-//import DarkMode from "../components/DarkMode";
 
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
@@ -74,10 +72,13 @@ function Home() {
               <Stack>
                 <Chip
                   label="REMOVE FROM BAG"
-                  onDelete={handleDelete}
+                  onClick={handleDelete}
                   variant="filled"
                   display="flex"
                   justifyContent="center"
+                  onClick={() => {
+                    removeFromBag(product);
+                  }}
                 />
               </Stack>
             </CardActions>

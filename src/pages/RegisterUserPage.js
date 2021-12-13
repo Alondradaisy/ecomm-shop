@@ -2,7 +2,7 @@ import { Button, TextField } from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Layout from "../components/Layout";
+import NavBar from "../components/NavBar";
 import { registerUser } from "../fetchData";
 import { LOG_IN_ACTION } from "../redux/userState";
 
@@ -87,10 +87,10 @@ const RegisterUserPage = () => {
   const user = useSelector((state) => state.user);
 
   return (
-    <Layout>
+    <NavBar>
       {error}
       {user ? `Welcome back ${user.name}!` : <Form setError={setError} />}
-    </Layout>
+    </NavBar>
   );
 };
 
