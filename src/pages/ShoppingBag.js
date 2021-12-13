@@ -40,16 +40,19 @@ function ShoppingBag() {
                   style={{
                     display: "flex",
                     flexDirection: "inherit",
+                    marginLeft: "20px",
                   }}
                   width="auto"
                   height="100px"
                 />
-                <span>{product.title}</span>
+                <span style={{ marginLeft: "110px" }}>{product.title}</span>
                 <Button
                   variant="contained"
                   style={{
                     display: "flex",
                     float: "right",
+                    marginRight: "55px",
+                    marginTop: "10px",
                   }}
                   size="small"
                   color="error"
@@ -58,7 +61,7 @@ function ShoppingBag() {
                     removeFromBag(product);
                   }}
                 >
-                  Delete
+                  REMOVE FROM BAG
                 </Button>
               </div>
             );
@@ -69,13 +72,23 @@ function ShoppingBag() {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "end",
-          marginRight: "20px",
+          alignItems: "center",
           justifyContent: "flex-end",
         }}
       >
-        <span style={{ marginBottom: "10px" }}>
-          Total:{" "}
+        <span
+          style={{
+            marginTop: "30px",
+            marginBottom: "60px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            fontWeight: "bold",
+            fontSize: "25px",
+          }}
+        >
+          TOTAL:{" "}
           {productsInBag.length > 0
             ? `$${totalBagPrice(productsInBag)}`
             : `$0.00`}
@@ -86,32 +99,35 @@ function ShoppingBag() {
               size="medium"
               variant="contained"
               style={{
-                marginRight: "5px",
+                marginRight: "15px",
               }}
             >
               Continue Shopping
             </Button>
           </Link>
-          <Button
-            size="medium"
-            variant="contained"
-            onClick={notify}
-            style={{
-              marginRight: "5px",
-            }}
-          >
-            <ToastContainer />
-            Checkout
-          </Button>
 
           <Button
             size="medium"
             variant="outlined"
+            style={{
+              marginRight: "15px",
+            }}
             onClick={() => {
               emptyBag();
             }}
           >
             Empty Bag
+          </Button>
+          <Button
+            size="medium"
+            variant="contained"
+            onClick={notify}
+            style={{
+              marginRight: "15px",
+            }}
+          >
+            <ToastContainer />
+            Checkout
           </Button>
         </div>
       </div>
