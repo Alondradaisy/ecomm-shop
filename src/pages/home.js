@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+import { Button } from "@material-ui/core";
 
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
@@ -70,16 +71,17 @@ function Home() {
                 </Fab>
               </Box>
               <Stack>
-                <Chip
-                  label="REMOVE FROM BAG"
-                  onClick={handleDelete}
-                  variant="filled"
-                  display="flex"
-                  justifyContent="center"
-                  onClick={() => {
-                    removeFromBag(product);
-                  }}
-                />
+                <Button>
+                  <Chip
+                    label="REMOVE FROM BAG"
+                    variant="filled"
+                    display="flex"
+                    justifyContent="center"
+                    onDelete={() => {
+                      removeFromBag(product);
+                    }}
+                  />
+                </Button>
               </Stack>
             </CardActions>
           </Card>

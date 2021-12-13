@@ -127,7 +127,7 @@ function ShoppingBag() {
             }}
           >
             <ToastContainer />
-            Checkout
+            Checkout NOW
           </Button>
         </div>
       </div>
