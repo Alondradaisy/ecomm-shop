@@ -37,12 +37,20 @@ function ShoppingBag() {
                 <img
                   src={product.img}
                   alt={product.title}
+                  style={{
+                    display: "flex",
+                    flexDirection: "inherit",
+                  }}
                   width="auto"
-                  height="50px"
+                  height="100px"
                 />
                 <span>{product.title}</span>
                 <Button
                   variant="contained"
+                  style={{
+                    display: "flex",
+                    float: "right",
+                  }}
                   size="small"
                   color="error"
                   endIcon={<DeleteIcon />}
@@ -63,6 +71,7 @@ function ShoppingBag() {
           flexDirection: "column",
           alignItems: "end",
           marginRight: "20px",
+          justifyContent: "flex-end",
         }}
       >
         <span style={{ marginBottom: "10px" }}>
