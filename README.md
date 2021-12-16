@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# SHOP RUTINA 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **AN E-COMMERCE SHOP BY DAISY**
 
-## Available Scripts
+### **Dependencies locked in with YARN.**
+ 
+- To start the frontend server: yarn start in CLI.
+- To spin up the backend server: nodemon src/server.js in CLI.
 
-In the project directory, you can run:
+### **DESCRIPTION**
+Shop Rutina is a responsive and dynamic e-commerce app that allows users to shop at the convenience of their homes or on-the-go. The app is responsive to mobile phones and desktop, as well and light / dark modes.
 
-### `yarn start`
+_Dark Reader is a great Chrome extension that enables users to customize screen preferences (on ALL sites with an on/off switch). Want to check it out, link is down below._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=en-US)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+There are two main pages:
 
-### `yarn test`
+**1. Home Page**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**2. Shopping Bag page**
 
-### `yarn build`
+The store is organized to cater to user store shopping functionalities. A user has access to images of the items on card for easy access on a card, ability to add an item to a shopping bag, stores a bag with items that were added to their shopping bag right from the main home page. When the user clicks on the shopping bag, they're are more features available. It features the items that were added to with the image and name with a 'REMOVE FROM BAG' button to easily remove an unwanted item, displays the total price (active and functional as items may be removed from the bag), a 'CONTINUE SHOPPING' button that routes users back to the main page with items, an 'EMPTY BAG' button that clears the bag, and a 'CHECKOUT' button that pops up a notification that the order has been confirmed. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Checkout functionality could later be connected to Stripe's API._
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### SUPPORT & CONTACT DETAILS
+If you run into any issues, feel free to contact me:
+- email: alondra.warren96@gmail.com
+- phone: (760) xxx-xxxx
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Technologies Used
+- MONGO DB 
+- Express
+- React
+- Node
+- AWS S3
+- Material UI 
 
-### `yarn eject`
+Copyright (c) 2021 Daisy Warren
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

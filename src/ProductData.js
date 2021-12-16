@@ -2,7 +2,6 @@ import { v4 as uuidv4 } from "uuid";
 
 const productList = [
   {
-    id: uuidv4(),
     title: "Rachel Comey Gyre Fringe Midi Skirt",
     description:
       "Layers of festive fringe adorn this midi skirt, adding movement to every step you take.  ",
@@ -11,7 +10,6 @@ const productList = [
     img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/rachel-comey-+gyre-skirt.JPG",
   },
   {
-    id: uuidv4(),
     title: "Rejina Pyo Lime Lilly Skirt ",
     description:
       "A hip-hugging midi-skirt with a crinkled satin finish by London-based designer Rejina Pyo.",
@@ -20,7 +18,6 @@ const productList = [
     img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/rejina-pyo-lime-lilly-skirt-suit.jpeg",
   },
   {
-    id: uuidv4(),
     title: "Common Projects Track Classic Sneakers",
     description:
       "These Track Classic ripstop sneakers with leather trim bring together retro cool with an athletic vibe for everyday wear.",
@@ -29,7 +26,6 @@ const productList = [
     img: "https://shoprutina-images.s3.us-west-1.amazonaws.com/track-classic-common-projs.JPG",
   },
   {
-    id: uuidv4(),
     title: "Maryam Nassir Zadeh Agatha Slide",
     description: "Made in Italy opal plastic block heel slide ",
     brand: "Maryam Nassir Zadeh",

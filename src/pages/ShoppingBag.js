@@ -118,14 +118,7 @@ function ShoppingBag() {
           >
             Empty Bag
           </Button>
-          <Button
-            size="medium"
-            variant="contained"
-            onClick={notify}
-            style={{
-              marginRight: "15px",
-            }}
-          >
+          <Button size="medium" variant="contained" onClick={notify}>
             <ToastContainer />
             Checkout NOW
           </Button>
