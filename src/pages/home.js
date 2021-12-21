@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
-import { Button } from "@material-ui/core";
+import Button from "@mui/material/Button";
 
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
